@@ -70,7 +70,7 @@ a:hover {
 header {
   position: sticky;
   top: 0;
-  background-color: #ffffff; /* change color as you prefer */
+  background-color: #9153f3;
   padding: 15px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -94,11 +94,142 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #007bff;
+  color: #5d056e;
   transform: scale(1.1);
 }
 
-/* Smooth scroll when clicking links */
 html {
   scroll-behavior: smooth;
+}
+
+.skills-grid img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  padding: 8px;
+  background: white;
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* HERO SECTION WITH IMAGE */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  gap: 60px;
+  background-color: #f7f9fc;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  /* my name highlights */
+  color: #9153f3;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #9153f3;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #9153f3;
+  transform: scale(1.05);
+}
+
+.hero-img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-img img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* ----------------------------- */
+/* NAVIGATION                    */
+/* ----------------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Sticky nav shadow when scrolling */
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
 }

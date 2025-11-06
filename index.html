@@ -3,89 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
+    <title>Home</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <!-- Top Header -->
+    <header className="navbar">
       <nav>
         <ul>
-          <li><a href="about">About me</a></li>
-          <li><a href="projects">Projects</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <header>
-      <h1>Hi, I’m Kimie👋</h1>
-      <b
-        ><p>
-          Junior Developer in progress | Curious Learner | Tech Enthusiast
-        </p></b
-      >
-    </header>
 
-    <section>
-      <!-- Profile Picture -->
-      <img src="images/me.PNG" alt="My photo" />
-      <h2>About Me</h2>
-      <!-- Description about me -->
-      <p>
-        I’m currently learning web development and aiming to become a full stack
-        developer. I enjoy solving problems, learning new technologies, and
-        turning ideas into reality
-      </p>
-
-      <h2>Interests</h2>
-      <p>
-        💻 Coding<br />
-        🎮 Gaming<br />
-        ✈️ Traveling
-      </p>
-
-      <!-- Education history -->
-      <h2>Education</h2>
-      <p>
-        <b>Universiti Teknologi PETRONAS</b><br />
-        Bachelor in Information Technology (Hons)<br />
-        Jan 2021 - Apr 2024<br />
-      </p>
-
-      <p>
-        <b>Universiti Teknologi PETRONAS</b><br />
-        Foundation in Information Technology<br />
-        Jan 2020 - Dec 2020<br />
-      </p>
-
-      <!-- List of skills -->
-      <h2>Skills</h2>
-      <p>
-        <b>Programming Languages: </b>JavaScript, C++, Visual Basic, PHP, Dart,
-        HTML, CSS, Python<br />
-        <b>Frameworks: </b>React.js, Next.js, Flutter, Prisma, Bootstrap,
-        Flutter <br />
-        <b>Tools: </b>Visual Studio Code, Postman, GitHub, Git, Figma<br />
-        <b>Database: </b>PostgreSQL, MySQL, OpenSQL, Firebase
-      </p>
-
-      <div className="skills-grid">
-        <img src="images/html.png" alt="HTML" />
-        <img src="images/css.png" alt="CSS" />
-        <img src="images/javascript.png" alt="JavaScript" />
-        <img src="images/html.png" alt="HTML" />
-        <img src="images/css.png" alt="CSS" />
-        <img src="images/javascript.png" alt="JavaScript" />
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hey there. I'm <span class="highlight">Kimie.</span></h1>
+        <p>
+          I build web experiences and front-end magic. Let's turn ideas into
+          code.
+        </p>
+        <a href="projects.html" class="btn">See My Work</a>
       </div>
 
-      <div class="contact">
-        <p>Connect with me:</p>
-        <a href="mailto:hakimie.daniel25@gmail.com">Email</a> |
-        <a href="https://github.com/kimieden7" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/hakimie-daniel" target="_blank"
-          >LinkedIn</a
-        >
+      <div class="hero-img">
+        <img src="images/profile.jpg" alt="Kimie" />
       </div>
     </section>
   </body>
