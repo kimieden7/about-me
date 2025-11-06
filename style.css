@@ -40,3 +40,65 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Skills Section */
+#skills {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  gap: 30px; /* spacing between the logos */
+  max-width: 700px;
+  margin: 0 auto; /* centers the grid container */
+}
+
+.skills-grid img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skills-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* HEADER / NAVIGATION */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* change color as you prefer */
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+  transition: color 0.25s ease-in-out, transform 0.25s;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+/* Smooth scroll when clicking links */
+html {
+  scroll-behavior: smooth;
+}
